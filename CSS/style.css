@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+img{
+    width: 100%;
+}
+
+/*NAVIGATION-------------------------*/
+
+header {
+    
+    height: 50px;
+    background-color: lightgray;
+   
+}
+
+nav{
+    margin: 0 auto;
+    display: flex;
+}
+
+#logo{
+    width: 84px;
+    height: 50px;
+}
+
+ul{
+    display: none;
+}
+
+#logo {
+   
+    margin-left: 20px;
+}
+
+#hamMenu {
+    width: 20px;
+    height: 24px;
+    display: block;
+}
+
+/*------------------------------------*/
+
+/*HEADER-------------------------------*/
+
+#hero {
+   
+}
+
+#heroImg {
+    overflow: hidden;
+    
+    background-color: gainsboro;
+}
+
+#hero #heroTxt {
+    background-color: gray;
+}
+
+/*-----------------------------------*/
+
+/*SECTION 1 - DIY---------------------*/
+
+#DIY {
+    background-color: forestgreen;
+    padding: 10px;
+}
+
+/*-----------------------------------*/
+
+/*SECTION 2 - Articles*/
+
+#DemoArticles {
+    background-color: dodgerblue;
+    padding: 10px;
+}
+
+article {
+    background-color: darksalmon;
+    padding: 10px;
+
+}
+
+.card {
+    background-color: cyan;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+
+/*-----------------------------------*/
+
+/*SECTION-3 GALLERY*/
+
+#gallery {
+    background-color: yellow;
+    padding: 20px;
+}
+
+#gallery div {
+    background-color: hotpink;
+    padding: 20px;
+
+}
+
+/*---------------------------------------*/
+
+/*MEDIA QUERY---------------------------*/
+/*Mobile*/
+@media screen and (min-width:540px) {
+
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    
+    header{
+        height: 75px;
+    }
+    
+    #logo{
+    width: 130px;
+    height: 77px;
+}
+    
+    
+    ul{
+        display: flex;
+    }
+    
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+}
+
+@media screen and (max-width:540px) {
+
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    
+}
+
+/*Tablet*/
+@media screen and (min-width:968px) {
+
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+    
+    header{
+        height: 100px;
+    }
+    
+    #logo{
+    width: 165px;
+    height: 98px;
+}
+    
+    ul{
+        display: flex;
+    }
+    
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+}
+
+
+
+/*------------------------------*/
