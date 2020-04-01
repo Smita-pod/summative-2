@@ -3,91 +3,147 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: whitesmoke;
 }
 
-img{
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    letter-spacing: .8px;
+}
+
+img {
     width: 100%;
 }
+
+/*TYPOGRAPHY-------------------------*/
+
+h1 {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    letter-spacing: 0;
+}
+
+h3 {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
 
 /*NAVIGATION-------------------------*/
 
 header {
-    
+
     height: 50px;
     background-color: lightgray;
-   
+
 }
 
-nav{
+nav {
     margin: 0 auto;
     display: flex;
-}
-
-#logo{
-    width: 84px;
-    height: 50px;
-}
-
-ul{
-    display: none;
+    justify-content: space-between;
 }
 
 #logo {
-   
+    width: 84px;
+    height: 45px;
+}
+
+ul {
+    display: none;
+    margin-top: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 35px;
+}
+
+#logo {
+
     margin-left: 20px;
 }
 
 #hamMenu {
-    width: 20px;
-    height: 24px;
+    width: 24px;
+    height: 28px;
+    margin-top: 10px;
+    margin-right: 10px;
     display: block;
+
 }
 
 /*------------------------------------*/
 
-/*HEADER-------------------------------*/
+/*SECTION 0  HERO-------------------------------*/
 
-#hero {
-   
-}
+#hero {}
 
 #heroImg {
     overflow: hidden;
-    
+
     background-color: gainsboro;
 }
 
 #hero #heroTxt {
-    background-color: gray;
+    padding: 50px 60px;
 }
 
 /*-----------------------------------*/
 
 /*SECTION 1 - DIY---------------------*/
 
-#DIY {
-    background-color: forestgreen;
-    padding: 10px;
-}
+#DIY img {}
 
 /*-----------------------------------*/
 
 /*SECTION 2 - Articles*/
 
 #DemoArticles {
-    background-color: dodgerblue;
-    padding: 10px;
+    margin-top: 120px;
+
+}
+
+.try {
+    background-color: antiquewhite;
+    background-position: bottom;
 }
 
 article {
-    background-color: darksalmon;
-    padding: 10px;
+
+
+    padding: 20px;
 
 }
 
 .card {
-    background-color: cyan;
+
+
     padding: 10px;
     margin: 5px;
 }
@@ -98,21 +154,23 @@ article {
 
 /*SECTION-3 GALLERY*/
 
-#gallery {
-    background-color: yellow;
-    padding: 20px;
-}
-
-#gallery div {
-    background-color: hotpink;
-    padding: 20px;
+#galleryDisplay {
+    padding: 10px;
+    margin-top: 150px;
 
 }
+
+#galleryDisplay h3 {
+    margin-bottom: 20px;
+}
+
+#gallery div {}
 
 /*---------------------------------------*/
 
-/*MEDIA QUERY---------------------------*/
+/*MEDIA QUERY-----------------------------------*/
 /*Mobile*/
+
 @media screen and (min-width:540px) {
 
     #gallery {
@@ -120,27 +178,38 @@ article {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
     }
-    
-    header{
+
+    header {
         height: 75px;
     }
-    
-    #logo{
-    width: 130px;
-    height: 77px;
-}
-    
-    
-    ul{
-        display: flex;
+
+    #logo {
+        width: 130px;
+        height: 70px;
     }
-    
+
+    #hamMenu {
+        width: 34px;
+        height: 38px;
+        margin-top: 15px;
+        margin-right: 20px;
+        display: block;
+
+    }
+
+    #hero #heroTxt {
+        padding: 50px 90px;
+    }
+
+
+
+
     article {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
     }
-    
+
 }
 
 @media screen and (max-width:540px) {
@@ -150,7 +219,7 @@ article {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
     }
-    
+
 }
 
 /*Tablet*/
@@ -161,28 +230,70 @@ article {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 10px;
     }
-    
-    header{
+
+    header {
         height: 100px;
     }
-    
-    #logo{
-    width: 165px;
-    height: 98px;
-}
-    
-    ul{
+
+    #logo {
+        width: 165px;
+        height: 90px;
+    }
+
+    ul {
         display: flex;
     }
-    
+
+    #hamMenu {
+        display: none;
+    }
+
     article {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
     }
-    
+
 }
 
+
+@media screen and (min-width:968px) {
+
+    #hero #heroTxt {
+        padding: 50px 260px;
+    }
+}
+
+
+/*DESKTOP*/
+@media screen and (max-width:1120px) {
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Ruda', sans-serif;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin: 15px;
+    }
+
+}
+
+@media screen and (min-width:1120px) {
+
+    #hero #heroTxt {
+        padding: 50px 300px;
+    }
+
+}
+
+@media screen and (min-width:1520px) {
+
+    #hero #heroTxt {
+        padding: 50px 500px;
+    }
+
+}
 
 
 /*------------------------------*/
