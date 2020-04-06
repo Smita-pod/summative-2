@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--<script src="https://kit.fontawesome.com/9f1ce73017.js" crossorigin="anonymous"></script>*/-->
+    <title>Home</title>
+</head>
+
+<body>
+<main>
+    <div id="MenuDisplay">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li> <a href="About.html">ABOUT</a></li>
+            <li> <a href="upload.html">UPLOAD</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="Installation.html">INSTALLATIONS</a></li>
+            <li> <a href="https://covid19.govt.nz/">COVID-19</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <nav>
+            <img id="logo" src="images/logoColor.png" alt="">
+
+            <div id="leftItems">
+               
+                <div>
+                    <ul id="openNav">
+                        <a href="index.html">HOME</a>
+                        <a href="About.html">ABOUT</a>
+                        <a href="upload.html">UPLOAD</a>
+                        <a href="gallery.html">GALLERY</a>
+                        <a href="Installation.html">INSTALLATIONS</a>
+                        <a href="https://covid19.govt.nz/">COVID-19</a>
+                        <a href="contact.html">CONTACT</a>
+                    </ul>
+
+                    <a href="#" id="hamMenu" onclick="toggleMenu()"><img src="images/hamMenuIcon.svg" alt=""></a>
+                </div>
+
+                <div id="signIn">
+                    <ul>
+                        <a href="register.html">Register</a>
+                        <div>|</div>
+                        <a href="#">Sign In</a>
+                    </ul>
+                </div> 
+            </div>
+        </nav>
+    </header>
+
+        <section id="galleryDisplay">
+            <h2>Artist's Gallery</h2>
+            <h4>See Our Amazing Participants Masterpieces</h4>
+            <div id="gallery">
+
+                <div class="container">
+                    <img src="images/art1.jpg" alt="">
+                    <div class="ArtistName">
+                        <h5>Dillon Hanks</h5>
+                        <h6>Auckland</h6>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="images/art2.jpg" alt="">
+                    <div class="ArtistName">
+                        <h5>Tegan Barker </h5>
+                        <h6>Nelson</h6>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="images/art3.jpg" alt="">
+                    <div class="ArtistName">
+                        <h5>Anna prank</h5>
+                        <h6>Hamilton</h6>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="images/art4.jpg" alt="">
+                    <div class="ArtistName">
+                        <h5>Faith Cole</h5>
+                        <h6>Auckland</h6>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="images/art5.jpg" alt="">
+                    <div class="ArtistName">
+                        <h5>Sarah Joseph</h5>
+                        <h6>New Plymouth</h6>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="images/art6.jpg" alt="">
+                    <div class="ArtistName">
+                        <h5>Katrina Balls</h5>
+                        <h6>Queenstown</h6>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="images/art7.jpg" alt="">
+                    <div class="ArtistName">
+                        <h5>Hiteshi Shah</h5>
+                        <h6>Auckland</h6>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="images/art8.jpg" alt="">
+                    <div class="ArtistName">
+                        <h5>Ziva Cutes</h5>
+                        <h6>Auckland</h6>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="images/art9.jpg" alt="">
+                    <div class="ArtistName">
+                        <h5>Blake Holts</h5>
+                        <h6>Christchurch</h6>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="images/art10.jpg" alt="">
+                    <div class="ArtistName">
+                        <h5>John Baker</h5>
+                        <h6>Wellington</h6>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="images/art11.jpg" alt="">
+                    <div class="ArtistName">
+                        <h5>Mike Clark</h5>
+                        <h6>Grisborne</h6>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="images/art12.png" alt="">
+                    <div class="ArtistName">
+                        <h5>Chloe Clair</h5>
+                        <h6>Auckland</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--------------------------------------------------------->
+        <!---Buttons----------------------------------------------->
+
+       <section id="buttons">
+        <div id="buttongreen">
+            <a href="upload.html"><input id="submitBtn"type="submit" value="UPLOAD" ></a>
+        </div>
+        <div id="buttonO">
+            <a href="register.html"><input id="submitBtn"type="submit" value="Register"></a>
+            <a href="register.html"><input id="submitBtn"type="submit" value="Sign In"></a>
+        </div>
+
+    </section>
+        <!----------------------------------------------------------->
+
+        <!--FOOTER--------------------------------------------------->
+
+        <footer>
+            <div id="left">
+                <div id="icons">
+                    <a href="#"><img src="images/iconFacebook.svg" alt=""></a>
+                    <a href="#"><img src="images/iconInstagram.svg" alt=""></a>
+                    <a href="#"><img src="images/iconTwitter.svg" alt=""></a>
+                    <a href="#"><img src="images/iconYoutube.svg" alt=""></a>
+                    <a href="#"> <img src="images/iconShare.svg" alt=""></a>
+                </div>
+                <div id="footerFlex">
+                    <ul>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="register.html">REGISTER</a></li>
+                        <li><a href="upload.html">UPLOAD</a></li>
+                        <li><a href="Installation.html">INSTALLATION</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <h6> @Copy Right 2020 All rights reserved by Nature's Atelier and Rubbish Art Festival</h6>
+                    </ul>
+
+                    <a href="About.html"><img src="images/NatureAtLogo.png" alt=""></a>
+                </div>
+            </div>
+
+        </footer>
+        
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

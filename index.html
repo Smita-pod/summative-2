@@ -7,36 +7,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!--<script src="https://kit.fontawesome.com/9f1ce73017.js" crossorigin="anonymous"></script>*/-->
     <title>Home</title>
 </head>
 
 <body>
+<main>
+    <div id="MenuDisplay">
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+           <a href="index.html"><li>ABOUT</li></a>
+           <a href="index.html"><li>UPLOAD</li></a>
+           <a href="index.html"><li>GALLERY</li></a>
+            <a href="index.html"><li>INSTALLATION</li></a>
+           <a href="index.html"><li>COVID-19</li></a>
+           <a href="index.html"><li>CONTACT</li></a>
+        </ul>
+    </div>
 
     <header>
         <nav>
-            <img id="logo" src="images/logo%20copy.png" alt="">
-            <ul>
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">UPLOAD</a>
-                <a href="#">ARTISTS</a>
-                <a href="#">INSTALLATIONS</a>
-                <a href="#">COVID-19</a>
-                <a href="#">CONTACT</a>
-            </ul>
-            <img id="hamMenu" src="images/hamMenuIcon.svg" alt="">
+            <img id="logo" src="images/logoColor.png" alt="">
+
+            <div id="leftItems">
+               
+                <div>
+                    <ul id="openNav">
+                        <a href="index.html">HOME</a>
+                        <a href="About.html">ABOUT</a>
+                        <a href="upload.html">UPLOAD</a>
+                        <a href="gallery.html">GALLERY</a>
+                        <a href="Installation.html">INSTALLATIONS</a>
+                        <a href="https://covid19.govt.nz/">COVID-19</a>
+                        <a href="contact.html">CONTACT</a>
+                    </ul>
+
+                    <a href="#" id="hamMenu" onClick="toggleMenu()"><img src="images/hamMenuIcon.svg" alt=""></a>
+                </div>
+
+                <div id="signIn">
+                    <ul>
+                        <a href="register.html">Register</a>
+                        <div>|</div>
+                        <a href="#">Sign In</a>
+                    </ul>
+                </div> 
+            </div>
         </nav>
     </header>
     <!------------------------------------------------->
     <!---------SECTION 0 - HERO------------------------------->
-
-    <section id="hero">
-        <div id="heroImg">
-            <img src="images/headerImg.jpg" alt="">
+    
+        <section >
+        <div class="headingContainer">
+            <div class="hero"></div>
+            
         </div>
-        <div id="heroTxt">
-            <h3>What’s Your</h3>
-            <h1>Creation In Isolation?</h1>
+
+        </section>
+
+        <!--Section-0 Hero Copy Text--------------------------------------  -->
+
+        <section id="copyHome">
+
+            <h2 id="smallH2">What’s Your</h2>
+            <h2>Creation In Isolation</h2>
 
             <h4>Rubbish Art Festival is a family Art event organised by Nature’s Atelier Art Studio to help people deal with Isolation and have some fun. </h4>
 
@@ -47,101 +83,93 @@
 
             <p>The idea is to make families celebrate this quarantine time by spending some creative time with their kids and partners laughing, brainstorming, innovating and creating your materpiece, with nothing but the Trash at home.
                 At this event website, Participants can register and upload a pic of their artwork and share with the world. </p>
+        </section>
 
-        </div>
-    </section>
+        <!------SECTION 1 - DIY------------------------------------------------->
 
-    <!------SECTION 1 - DIY------------------------------------------------->
-    
-       <section id="DIY">
-        <div>
-            <img src="images/diy.png" alt="">
-        </div>
-    </section>
-    
-    <!------SECTION 2 - Articles---------------------------------------------------->
-   
-         <section id="DemoArticles">
+        <section id="DIY">
+            <div>
+                <a href="https://youtu.be/r8kMDYgLAto"><img src="images/DIYvideoF.png" alt=""></a>
+            </div>
+        </section>
 
-        <article>
-            <div class="try">
-                <div class="card">
-                    <img src="images/articleImg1.png" alt="">
+        <!------SECTION 2 - Articles---------------------------------------------------->
+
+        <section id="DemoArticles">
+
+            <article>
+                <div class="halfBg">
+                    <div class="card">
+                        <a href="#"><img src="images/articleImg1.png" alt=""></a>
+                    </div>
+                    <div class="cardT">
+                        <h3>What You Can Use?</h3>
+                        <p>Participants can use anything useless available at their homes.Have a walk in your garden, and pick up any loose materials from the Nature.Clutter in all the useless recyclable resources from your store 
+area or garage and you are all set to go.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>What You Can Use?</h3>
-                    <p>Collect in whatever useless, recyclable, trash, (open the shed in your garage, take out all the useless items, have a walk in you garden and collect some natures treasure) items.</p>
+            </article>
+
+            <article>
+                <div class="halfBg">
+                    <div class="card">
+                        <a href="#"><img src="images/articleImg2.png" alt=""></a>
+                    </div>
+                    <div class="cardT">
+                        <h3>What You Can Create</h3>
+                        <p>The idea is to make families celebrate this quarantine time by spending some creative time with their kids and partners laughing, brainstorming, innovating and creating your materpiece, with nothing but the Trash at home.
+</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="halfBg">
+                    <div class="card">
+                        <a href="#"><img src="images/articleImg3.png" alt=""></a>
+                    </div>
+                    <div class="cardT">
+                        <h3>About Installation</h3>
+                        <p>Once we get through this Pandemic. Each city will have a massive exhibition display where all the participants can exhibit their art piece and will be displayed there permanently forever. 
+This way we will create a lill memorial of this Global Pandemic. 
+A form of creating a “Good Memory for Bad times.”</p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!----------------------------------------------------------->
+
+        <!--FOOTER--------------------------------------------------->
+
+       <footer>
+            <div id="left">
+                <div id="icons">
+                    <a href="#"><img src="images/iconFacebook.svg" alt=""></a>
+                    <a href="#"><img src="images/iconInstagram.svg" alt=""></a>
+                    <a href="#"><img src="images/iconTwitter.svg" alt=""></a>
+                    <a href="#"><img src="images/iconYoutube.svg" alt=""></a>
+                    <a href="#"> <img src="images/iconShare.svg" alt=""></a>
+                </div>
+                <div id="footerFlex">
+                    <ul>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="register.html">REGISTER</a></li>
+                        <li><a href="upload.html">UPLOAD</a></li>
+                        <li><a href="Installation.html">INSTALLATION</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <h6> @Copy Right 2020 All rights reserved by Nature's Atelier and Rubbish Art Festival</h6>
+                    </ul>
+
+                    <a href="About.html"><img src="images/NatureAtLogo.png" alt=""></a>
                 </div>
             </div>
-        </article>
 
-        <article>
-            <div class="card">
-                <img src="images/articleImg2.png" alt="">
-            </div>
-            <div class="card">
-                <h3>What You Can Use?</h3>
-                <p>Collect in whatever useless, recyclable, trash, (open the shed in your garage, take out all the useless items, have a walk in you garden and collect some natures treasure) items.</p>
-            </div>
-        </article>
-
-        <article>
-            <div class="card">
-                <img src="images/articleImg3.png" alt="">
-            </div>
-            <div class="card">
-                <h3>What You Can Use?</h3>
-                <p>Collect in whatever useless, recyclable, trash, (open the shed in your garage, take out all the useless items, have a walk in you garden and collect some natures treasure) items.</p>
-            </div>
-        </article>
-
-    </section>
-    
-    <!--------SECTION 3 - GALLERY------------------------------------------->
-
-    <section id="galleryDisplay">
-        <h3>Artist's Gallery</h3>
-        <div id="gallery">
-            <div>
-                <img src="images/galleryArt1.png" alt="">
-            </div>
-            <div>
-                <img src="images/galleryArt2.png" alt="">
-            </div>
-            <div>
-                <img src="images/gallertArt3.png" alt="">
-            </div>
-            <div>
-                <img src="images/galleryArt4.png" alt="">
-            </div>
-            <div>
-                <img src="images/galleryArt1.png" alt="">
-            </div>
-            <div>
-                <img src="images/galleryArt2.png" alt="">
-            </div>
-            <div>
-                <img src="images/gallertArt3.png" alt="">
-            </div>
-            <div>
-                <img src="images/galleryArt4.png" alt="">
-            </div>
-            <div>
-                <img src="images/galleryArt1.png" alt="">
-            </div>
-            <div>
-                <img src="images/galleryArt2.png" alt="">
-            </div>
-            <div>
-                <img src="images/gallertArt3.png" alt="">
-            </div>
-            <div>
-                <img src="images/galleryArt4.png" alt="">
-            </div>
-        </div>
-
-    </section>
-
+        </footer>
+        
+    </main>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

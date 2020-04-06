@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--<script src="https://kit.fontawesome.com/9f1ce73017.js" crossorigin="anonymous"></script>*/-->
+    <title>Home</title>
+</head>
+
+<body>
+<main>
+    <div id="MenuDisplay">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li> <a href="About.html">ABOUT</a></li>
+            <li> <a href="upload.html">UPLOAD</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="Installation.html">INSTALLATIONS</a></li>
+            <li> <a href="https://covid19.govt.nz/">COVID-19</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <nav>
+            <img id="logo" src="images/logoColor.png" alt="">
+
+            <div id="leftItems">
+               
+                <div>
+                    <ul id="openNav">
+                        <a href="index.html">HOME</a>
+                        <a href="About.html">ABOUT</a>
+                        <a href="upload.html">UPLOAD</a>
+                        <a href="gallery.html">GALLERY</a>
+                        <a href="Installation.html">INSTALLATIONS</a>
+                        <a href="https://covid19.govt.nz/">COVID-19</a>
+                        <a href="contact.html">CONTACT</a>
+                    </ul>
+
+                    <a href="#" id="hamMenu" onclick="toggleMenu()"><img src="images/hamMenuIcon.svg" alt=""></a>
+                </div>
+
+                <div id="signIn">
+                    <ul>
+                        <a href="register.html">Register</a>
+                        <div>|</div>
+                        <a href="#">Sign In</a>
+                    </ul>
+                </div> 
+            </div>
+        </nav>
+    </header>
+    <!------------------------------------------------->
+    <!--REGISTER FORM---------------------------------------->
+   
+    
+    <section id="allForm">
+       
+            <h2>Contact Us</h2>
+            <h5>Email US</h5>
+            <p>Have a pitch for an idea you want us to consider?
+            Or want to know more about Us?
+            You can do both via
+            <a href="#">contact@naturesatelier.com</a></p>
+       
+            <form action="">
+            <h5 id="sndMsg">Send us a Message</h5>
+            <p>For general enquiries please fill out the form below to contact us. We’ll get back to you ASAP.</p>
+            <div>
+                <label for="Full Name">Full Name</label>
+            <input type="text">
+            </div>
+            <div>
+                <label for="Email">Email</label>
+            <input type="text">
+            </div>
+            <div>
+                <label for="Phone">Phone Number</label>
+            <input type="text">
+            </div>
+            <div>
+                <label for="Message">Write your Message</label>
+            <textarea name="" id="" cols="20" rows="10"></textarea>
+            </div>
+            <div>
+            <input id="submitBtn" type="submit" value="SEND">
+            </div>
+            </form>
+       
+    </section>
+
+    <!---Buttons----------------------------------------------->
+
+    
+    <!----------------------------------------------------------->
+
+    <!--FOOTER--------------------------------------------------->
+
+   <footer>
+            <div id="left">
+                <div id="icons">
+                    <a href="#"><img src="images/iconFacebook.svg" alt=""></a>
+                    <a href="#"><img src="images/iconInstagram.svg" alt=""></a>
+                    <a href="#"><img src="images/iconTwitter.svg" alt=""></a>
+                    <a href="#"><img src="images/iconYoutube.svg" alt=""></a>
+                    <a href="#"> <img src="images/iconShare.svg" alt=""></a>
+                </div>
+                <div id="footerFlex">
+                    <ul>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="register.html">REGISTER</a></li>
+                        <li><a href="upload.html">UPLOAD</a></li>
+                        <li><a href="Installation.html">INSTALLATION</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <h6> @Copy Right 2020 All rights reserved by Nature's Atelier and Rubbish Art Festival</h6>
+                    </ul>
+
+                    <a href="About.html"><img src="images/NatureAtLogo.png" alt=""></a>
+                </div>
+            </div>
+
+        </footer>
+        
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
